@@ -8,3 +8,5 @@ this step is needed to authenticate and sign in to reddit and access the comment
 It is recommended to have a different reddit account to comment other than the one in use as the script accepts responses from everyone except the user
 
 This can be changed by removing the last condition in the second line of run_bot function {and comment.author != reddit.user.me()}
+
+This file also stores the comment it has already replied to so it doesnt spam the same comment over and over again
