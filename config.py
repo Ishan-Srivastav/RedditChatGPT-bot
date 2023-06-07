@@ -1,0 +1,5 @@
+username = "ADD REDDIT USERNAME"
+password = "ADD REDDIT PASSWORD"
+reddit_client_id = "ADD REDDIT CLIENT ID"
+reddit_client_secret = "ADD REDDIT CLIENT SECRET"
+open_ai_secret_key = "ADD OPEN AI SECRET KEY"
