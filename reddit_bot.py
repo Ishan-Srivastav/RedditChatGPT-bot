@@ -4,7 +4,6 @@ import time
 import openai
 import os
 
-SUBREDDIT = "ADD SUBREDDIT TO BE MONITERED HERE"
 openai.api_key = config.open_ai_secret_key
 
 
@@ -27,7 +26,7 @@ def ask_gpt(str):
     return reply
 
 def run_bot(reddit,comment_read):
-    for comment in reddit.subreddit(SUBREDDIT).comments(limit = 10):
+    for comment in reddit.subreddit(config.subreddit).comments(limit = 10):
         if "!askgpt|" in comment.body and comment.id not in comment_read and comment.author != reddit.user.me():
             print(comment.body + "\n \n")
             message = comment.body.split("|")
